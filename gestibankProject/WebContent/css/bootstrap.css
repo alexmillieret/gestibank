@@ -57,6 +57,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  height:100%;
 }
 
 @-ms-viewport {
@@ -69,13 +70,21 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
+  height: 100%;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
+  height:100%;
   color: #919aa1;
   text-align: left;
   background-color: #fff;
+  background-image: url("../images/banque.png");
+  background-size:cover
+  
+}
+header{
+	width:100%;
 }
 
 [tabindex="-1"]:focus {
@@ -4993,6 +5002,7 @@ tbody.collapse.show {
   background-color: #804000;
   border-radius: 0;
   color: white;
+  width:100%;
 }
 .jumbotronfooter{
 	padding-bottom: 1rem;
@@ -5000,6 +5010,9 @@ tbody.collapse.show {
   border-radius: 0;
   color: white;
   margin-top: 1rem;
+  width :100%;
+  position: fixed;
+    botom: 0;
 }
 
 @media (min-width: 576px) {
@@ -5008,6 +5021,8 @@ tbody.collapse.show {
   }
   .jumbotronfooter {
     padding: 1rem 1rem;
+    position: absolute;
+  bottom: 0;
   }
 }
 
