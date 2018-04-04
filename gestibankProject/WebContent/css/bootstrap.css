@@ -70,7 +70,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  height: 100%;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.875rem;
   font-weight: 400;
@@ -80,7 +79,9 @@ body {
   text-align: left;
   background-color: #fff;
   background-image: url("../images/banque.png");
-  background-size:cover
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
   
 }
 header{
@@ -2132,6 +2133,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .form-group {
+
   margin-bottom: 1rem;
 }
 
@@ -5011,8 +5013,10 @@ tbody.collapse.show {
   color: white;
   margin-top: 1rem;
   width :100%;
-  position: fixed;
-    botom: 0;
+  position:absolute;
+  bottom:0;
+
+bottom:0;
 }
 
 @media (min-width: 576px) {
