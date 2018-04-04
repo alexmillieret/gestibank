@@ -4994,10 +4994,20 @@ tbody.collapse.show {
   border-radius: 0;
   color: white;
 }
+.jumbotronfooter{
+	padding-bottom: 1rem;
+  background-color: #804000;
+  border-radius: 0;
+  color: white;
+  margin-top: 1rem;
+}
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
+  }
+  .jumbotronfooter {
+    padding: 1rem 1rem;
   }
 }
 
