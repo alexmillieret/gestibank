@@ -1,3 +1,4 @@
+<div style="position:relative;min-height: 100%">
 <header>
 	<div class="jumbotron" style="text-align: center;">
 		<div style="float: right;">
@@ -8,5 +9,3 @@
 		<img src="images/logo5.png" alt="logo5" style="width: 597px;" />
 	</div>
 </header>
-</body>
-</html>

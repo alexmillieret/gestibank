@@ -82,9 +82,9 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment:fixed;
-  position:relative;
   
 }
+
 header{
 	width:100%;
 	
@@ -5008,6 +5008,10 @@ tbody.collapse.show {
   color: white;
   width:100%;
 }
+.global{
+        min-height: 100%;
+        position: relative;
+      }
 .jumbotronfooter{
 	padding-bottom: 1rem;
   background-color: #804000;
