@@ -12,8 +12,8 @@
 </head>
 <body>
 <c:import url="header.jsp" />
-	<div class="row">
-		<div class="offset-1 col-3" style ="text-align:center">
+	<div class="row" style="margin-bottom:20px">
+		<div class="offset-1 col-sm-3" style ="text-align:center;margin-bottom:20px">
 			<div id="powerd">
 				<a href="https://www.transfermate.com/" target="_blank"
 					id="tm_add146" class="tm_add146">Fournit par TransferMate</a>
@@ -29,16 +29,16 @@
 					JavaScript.</span>
 			</noscript>
 </div>
-<div class="col-8">
+<div class="col-sm-8">
 <div class="row">
-			<div class="col-12" style ="text-align:center">
+			<div class="col-sm-12" style ="text-align:center">
 				<a class="btn btn-primary btn-lg" href="#" role="button">Devenir Client</a>
 				</br>
 				</br>
 				</br>
 				</br>
 			</div>
-			<div class="col-12" style ="text-align:center">
+			<div class="col-sm-12" style ="text-align:center">
 			<form name="formconnexion" action="Controller?page=connexion" method= "post"> 
 <input class="btn btn-primary btn-lg" type="submit" value="Se connecter"></td>
 

@@ -57,7 +57,9 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
-  height:100%; 
+  height:100%;
+  margin:0px;
+  
 }
 
 @-ms-viewport {
@@ -70,6 +72,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
+  margin-right:0px;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.875rem;
   font-weight: 400;
@@ -87,6 +90,7 @@ body {
 
 header{
 	width:100%;
+	margin-right:0px;
 	
 }
 
@@ -4999,9 +5003,9 @@ tbody.collapse.show {
   text-decoration: none;
   background-color: #1d2124;
 }
-
 .jumbotron {
   padding: 2rem 1rem;
+  margin-right:0px;
   margin-bottom: 2rem;
   background-color: #804000;
   border-radius: 0;
@@ -5022,7 +5026,20 @@ tbody.collapse.show {
  position: absolute; 
  bottom: 0;
 }
-
+#logo2{
+	display:none;
+}
+@media (max-width: 1024px){
+	#logo5{
+	display:none;
+	}
+	#logo2{
+	display:inline;}
+	.jumbotron{
+	background-color: silver;
+	padding: 0.5rem 0.5rem;
+	}
+}
 @media (min-width: 576px) {
   .jumbotron {
     padding: 2rem 2rem;
