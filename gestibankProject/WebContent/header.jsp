@@ -1,4 +1,4 @@
-<div style="position:relative;min-height: 100%">
+<div style="position:relative;min-height: 100%;padding-bottom:2rem;">
 <header>
 	<div class="jumbotron" style="text-align: center;">
 		<div style="float: right;">
