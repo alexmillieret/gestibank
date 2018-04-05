@@ -6,7 +6,7 @@ import java.util.Date;
 public class Conseiller extends Utilisateur {
 private ArrayList<Client> listeClient;
 private Date dateDebutContrat;
-
+private int matricule;
 
 	public Conseiller(ArrayList<Client> listeClient, Date dateDebutContrat) {
 		super();
@@ -15,6 +15,8 @@ private Date dateDebutContrat;
 		this.setRole("Manager");
 		
 	}
+
+
 
 
 	public ArrayList<Client> getListeClient() {
