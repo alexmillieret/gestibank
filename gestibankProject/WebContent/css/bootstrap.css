@@ -81,11 +81,13 @@ body {
   background-image: url("../images/banque.png");
   background-repeat:no-repeat;
   background-size:cover;
+  background-attachment:fixed;
   position:relative;
   
 }
 header{
 	width:100%;
+	
 }
 
 [tabindex="-1"]:focus {
@@ -5013,10 +5015,8 @@ tbody.collapse.show {
   color: white;
   margin-top: 1rem;
   width :100%;
-  position:absolute;
-  bottom:0;
-
-bottom:0;
+ position: absolute; 
+ bottom: 0;
 }
 
 @media (min-width: 576px) {
@@ -5025,8 +5025,7 @@ bottom:0;
   }
   .jumbotronfooter {
     padding: 1rem 1rem;
-    position: absolute;
-  bottom: 0;
+
   }
 }
 
