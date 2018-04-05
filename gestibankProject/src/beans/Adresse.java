@@ -1,9 +1,9 @@
 package beans;
 
-import java.io.Serializable;
 
-public class Adresse implements Serializable{
-private Integer numero;
+
+public class Adresse{
+private int numero;
 private String rue;
 private String ville;
 private String pays;
@@ -11,7 +11,7 @@ private String codePostal;
 
 public Adresse() {}
 
-public Adresse(Integer numero, String rue, String ville, String pays, String codePostal) {
+public Adresse(int numero, String rue, String ville, String pays, String codePostal) {
 	super();
 	this.numero = numero;
 	this.rue = rue;
@@ -20,11 +20,11 @@ public Adresse(Integer numero, String rue, String ville, String pays, String cod
 	this.codePostal = codePostal;
 }
 
-public Integer getNumero() {
+public int getNumero() {
 	return numero;
 }
 
-public void setNumero(Integer numero) {
+public void setNumero(int numero) {
 	this.numero = numero;
 }
 
