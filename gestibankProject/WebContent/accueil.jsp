@@ -32,7 +32,7 @@
 <div class="col-8">
 <div class="row">
 			<div class="col-12" style ="text-align:center">
-				<a class="btn btn-primary btn-lg" href="#" role="button">Devenir Client</a>
+				<a class="btn btn-primary btn-lg" href="Controller?page=connexion" role="button">Devenir Client</a>
 				</br>
 				</br>
 				</br>
