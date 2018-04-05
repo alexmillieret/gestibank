@@ -12,6 +12,7 @@ private Date dateDebutContrat;
 		super();
 		this.listeClient = listeClient;
 		this.dateDebutContrat = dateDebutContrat;
+		this.setRole("Manager");
 		
 	}
 

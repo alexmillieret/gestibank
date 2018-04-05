@@ -2,16 +2,18 @@ package utilisateur;
 
 import java.util.ArrayList;
 import compte.Compte;
+import demande.Demandes;
 
 public class Client extends Utilisateur {
 private ArrayList<Compte> comptes;
 private Conseiller conseiller;
-
+private ArrayList<Demandes> listeDemande;
 
 public Client(ArrayList<Compte> comptes, Conseiller conseiller) {
 	super();
 	this.comptes = comptes;
 	this.conseiller = conseiller;
+	this.setRole("User");
 }
 
 

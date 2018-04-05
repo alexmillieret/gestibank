@@ -11,6 +11,7 @@ public abstract class Utilisateur implements Serializable{
 	private String mail;
 	private Adresse adresse;
 	private String telephone;
+	private String role;
 	private int nbEnfts;
 	
 	public Utilisateur(){}
@@ -26,6 +27,14 @@ public abstract class Utilisateur implements Serializable{
 		this.adresse = adresse;
 		this.telephone = telephone;
 		this.nbEnfts = nbEnfts;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 	public String getNomUtilisateur() {

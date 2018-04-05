@@ -9,6 +9,7 @@ private ArrayList<Conseiller> listeConseiller;
 	public Administrateur(ArrayList<Conseiller> listeConseiller) {
 	super();
 	this.listeConseiller = listeConseiller;
+	this.setRole("SuperAdmin");
 }
 	public ArrayList<Conseiller> getListeConseiller() {
 		return listeConseiller;
