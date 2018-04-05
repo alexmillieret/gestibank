@@ -25,5 +25,6 @@ Bienvenue dans l'espace client
 <div style="margin-top: 5rem; margin-bottom:5rem;text-align:center;">
 <input class="myButton" type="submit" value="Visualiser mes comptes">
 </div>
+<c:import url="footer.jsp" />
 </body>
 </html>

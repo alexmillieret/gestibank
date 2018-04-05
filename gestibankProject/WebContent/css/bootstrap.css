@@ -5058,7 +5058,7 @@ tbody.collapse.show {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
 	background-color:#ffab23;
-
+}
 .jumbotron {
   padding: 2rem 1rem;
   margin-right:0px;
