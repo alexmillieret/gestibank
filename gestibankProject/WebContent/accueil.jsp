@@ -32,7 +32,11 @@
 <div class="col-sm-8">
 <div class="row">
 			<div class="col-sm-12" style ="text-align:center">
-				<a class="btn btn-primary btn-lg" href="#" role="button">Devenir Client</a>
+						<form name="formformulaire" action="Controller?page=formulaire" method= "post"> 
+<input class="btn btn-primary btn-lg" type="submit" value="Devenir Client"></td>
+
+</form> 
+			
 				</br>
 				</br>
 				</br>
