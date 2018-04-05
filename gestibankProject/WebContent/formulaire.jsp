@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div>
-		<form class="form-horizontal">
+		<form class="form-horizontal" method="post">
 			<fieldset>
 
 				<legend>Ouverture de compte</legend>
@@ -131,7 +131,7 @@
 				<div class="form-group">
 
 					<div class="col-md-10 text-center">
-						<button id="button1id" name="button1id" class="btn btn-success">Valider</button>
+						<button id="button1id" name="button1id" class="btn btn-success" href="Controller?page=formulaireok" >Valider</button>
 						<button id="button2id" name="button2id" class="btn btn-danger">Annuler</button>
 					</div>
 				</div>

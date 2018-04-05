@@ -31,8 +31,13 @@
 </div>
 <div class="col-sm-8">
 <div class="row">
+<<<<<<< HEAD
 			<div class="col-sm-12" style ="text-align:center">
 				<a class="btn btn-primary btn-lg" href="#" role="button">Devenir Client</a>
+=======
+			<div class="col-12" style ="text-align:center">
+				<a class="btn btn-primary btn-lg" href="Controller?page=connexion" role="button">Devenir Client</a>
+>>>>>>> branch 'master' of https://github.com/alexmillieret/gestibank.git
 				</br>
 				</br>
 				</br>
