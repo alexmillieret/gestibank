@@ -39,7 +39,11 @@
 				</br>
 			</div>
 			<div class="col-12" style ="text-align:center">
-				<a class="btn btn-primary btn-lg" href="#" role="button">Se connecter</a>
+			<form name="formconnexion" action="Controller?page=connexion" method= "post"> 
+<input class="btn btn-primary btn-lg" type="submit" value="Se connecter"></td>
+
+</form> 
+	
 			</div>
 			</div>
 		</div>
