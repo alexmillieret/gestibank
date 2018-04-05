@@ -14,11 +14,11 @@
 <c:import url="header.jsp" />
 	<div class="row" style="margin-bottom:20px">
 		<div class="offset-1 col-sm-3" style ="text-align:center;margin-bottom:20px">
-			<div id="powerd">
+			<div id="powerd" style="text-align:center">
 				<a href="https://www.transfermate.com/" target="_blank"
 					id="tm_add146" class="tm_add146">Fournit par TransferMate</a>
 			</div>
-			<div id="demo-rate-convert"></div>
+			<div id="demo-rate-convert" style="text-align:center"></div>
 			<script>
 				var apiTargetHtmlObj = document.getElementById("demo-rate-convert");
 				var tmScript = document.createElement("script");
@@ -31,13 +31,8 @@
 </div>
 <div class="col-sm-8">
 <div class="row">
-<<<<<<< HEAD
 			<div class="col-sm-12" style ="text-align:center">
 				<a class="btn btn-primary btn-lg" href="#" role="button">Devenir Client</a>
-=======
-			<div class="col-12" style ="text-align:center">
-				<a class="btn btn-primary btn-lg" href="Controller?page=connexion" role="button">Devenir Client</a>
->>>>>>> branch 'master' of https://github.com/alexmillieret/gestibank.git
 				</br>
 				</br>
 				</br>
