@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Client extends Utilisateur {
 private ArrayList<Compte> comptes;
-private int idConseiller;
+private Conseiller conseiller;
 
 public Client() {
 	super();
 	this.comptes=new ArrayList<Compte>;
-	this.idConseiller=0;
+	this.conseiller=new COnseiller();
 	// TODO Auto-generated constructor stub
 }
 

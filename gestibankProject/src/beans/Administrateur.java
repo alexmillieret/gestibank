@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class Administrateur extends Utilisateur {
 private ArrayList<Conseiller> listeConseiller;
 
-	
+	public Administrateur() {
+		super();
+	}
 	public Administrateur(String nomUtilisateur, String password, String nom, String prenom, String mail,
 			Adresse adresse, String telephone, int nbEnfts) {
 		super(nomUtilisateur, password, nom, prenom, mail, adresse, telephone, nbEnfts);
