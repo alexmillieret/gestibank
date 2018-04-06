@@ -9,20 +9,20 @@
 <title>Espace Client</title>
 </head>
 <body>
-<div class="enteteEspaceClient" style="vertical-align:center; text-align:center">
-<img id="logo4" src="images/logo2.png" alt="logo4" style="width: 150px;" />
+<div class="enteteEspaceClient">
+<img id="logo4" src="images/logo2.png" alt="logo4" />
 Bienvenue dans l'espace client
 </div>
-<div style="margin-top: 5rem; margin-bottom:5rem; text-align:center;">
+<div class="bodyclient">
 <input class="myButton" type="submit" value="Demande de modification / Ajout de comptes">
 </div>
-<div style="margin-top: 5rem; margin-bottom:5rem;text-align:center;">
+<div class="bodyclient">
 <input class="myButton" type="submit" value="Effectuer une transation">
 </div>
-<div style="margin-top: 5rem; margin-bottom:5rem;text-align:center;">
+<div class="bodyclient">
 <input class="myButton" type="submit" value="Voir mes notifications">
 </div>
-<div style="margin-top: 5rem; margin-bottom:5rem;text-align:center;">
+<div class="bodyclient">
 <input class="myButton" type="submit" value="Visualiser mes comptes">
 </div>
 <c:import url="footer.jsp" />

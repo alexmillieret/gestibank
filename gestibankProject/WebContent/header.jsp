@@ -1,6 +1,6 @@
 <div style="position:relative;min-height: 100%;padding-bottom:2rem;">
 <header>
-	<div class="jumbotron" style="text-align: center;">
+	<div class="jumbotron">
 		<div style="float: right;">
 			<img src="images/drapeau-france-icone-7111-32.png" alt="france" /> <img
 				src="images/drapeau-ile-jarvis-icone-9474-32.png" alt="etats-unis" />

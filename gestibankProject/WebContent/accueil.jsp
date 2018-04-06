@@ -15,13 +15,14 @@
 <fmt:setBundle basename="international/message"/>
 
 <c:import url="header.jsp" />
-	<div class="row" style="margin-bottom:20px">
-		<div class="offset-1 col-sm-3" style ="text-align:center;margin-bottom:20px">
-			<div id="powerd" style="text-align:center">
+<div class="bodyaccueil">
+	<div class="row">
+		<div class="offset-1 col-sm-3">
+			<div id="powerd">
 				<a href="https://www.transfermate.com/" target="_blank"
 					id="tm_add146" class="tm_add146"><fmt:message key="acc.ws"></fmt:message> TransferMate</a>
 			</div>
-			<div id="demo-rate-convert" style="text-align:center"></div>
+			<div id="demo-rate-convert"></div>
 			<script>
 				var apiTargetHtmlObj = document.getElementById("demo-rate-convert");
 				var tmScript = document.createElement("script");
@@ -34,7 +35,7 @@
 </div>
 <div class="col-sm-8">
 <div class="row">
-			<div class="col-sm-12" style ="text-align:center">
+			<div class="col-sm-12">
 						<form name="formformulaire" action="Controller?page=formulaire" method= "post"> 
 <input class="btn btn-primary btn-lg" type="submit" value="<fmt:message key="acc.devenirclient"></fmt:message>"></td>
 
@@ -45,7 +46,7 @@
 				</br>
 				</br>
 			</div>
-			<div class="col-sm-12" style ="text-align:center">
+			<div class="col-sm-12">
 			<form name="formconnexion" action="Controller?page=connexion" method= "post"> 
 <input class="btn btn-primary btn-lg" type="submit" value="<fmt:message key="acc.seconnecter"></fmt:message>"></td>
 
