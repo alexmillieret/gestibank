@@ -13,6 +13,7 @@
 </head>
 <body>
 <fmt:setBundle basename="international/message"/>
+
 <c:import url="header.jsp" />
 	<div class="row" style="margin-bottom:20px">
 		<div class="offset-1 col-sm-3" style ="text-align:center;margin-bottom:20px">
