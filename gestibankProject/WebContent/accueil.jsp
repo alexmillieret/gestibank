@@ -49,7 +49,6 @@
 <input class="btn btn-primary btn-lg" type="submit" value="<fmt:message key="acc.seconnecter"></fmt:message>"></td>
 
 </form> 
-	
 			</div>
 			</div>
 		</div>

@@ -139,6 +139,7 @@
 						<a href="Controller?page=formulaireok"><button id="button2id" name="button2id" class="btn btn-danger"><fmt:message key="f.annul"></fmt:message></button></a>
 						
 						
+						
 					</div>
 				</div>
 
