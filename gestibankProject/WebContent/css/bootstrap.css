@@ -5031,6 +5031,9 @@ tbody.collapse.show {
 	width:400px;
 	height:100px;
 }
+.drapeau{
+	float: right;
+}
 .bodyaccueil{
 	text-align:center;
 }
