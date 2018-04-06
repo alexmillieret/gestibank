@@ -1,8 +1,6 @@
 package utilisateur;
 
-import java.io.Serializable;
-
-public abstract class Utilisateur implements Serializable{
+public abstract class Utilisateur {
 
 	private String nomUtilisateur;
 	private String password;
@@ -13,21 +11,6 @@ public abstract class Utilisateur implements Serializable{
 	private String telephone;
 	private String role;
 	private int nbEnfts;
-	
-	public Utilisateur(){}
-
-	public Utilisateur(String nomUtilisateur, String password, String nom, String prenom, String mail, Adresse adresse,
-			String telephone, int nbEnfts) {
-		super();
-		this.nomUtilisateur = nomUtilisateur;
-		this.password = password;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.mail = mail;
-		this.adresse = adresse;
-		this.telephone = telephone;
-		this.nbEnfts = nbEnfts;
-	}
 
 	public String getRole() {
 		return role;
@@ -100,6 +83,5 @@ public abstract class Utilisateur implements Serializable{
 	public void setNbEnfts(int nbEnfts) {
 		this.nbEnfts = nbEnfts;
 	}
-	
-	
+
 }

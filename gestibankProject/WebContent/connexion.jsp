@@ -11,13 +11,14 @@
 <body>
 <c:import url="header.jsp" />
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="<c:url value="/Connexion" />">
 <fieldset>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="login"></label>  
   <div class="col-md-5">
   <input id="login" name="login" type="text" placeholder="Identifiant" class="form-control input-md" required="">
+  <span class="erreur">${form.erreurs['login']}</span>
   <span class="help-block">Entrez votre nom d'utilisateur</span>  
   </div>
 </div>
@@ -27,6 +28,7 @@
   <label class="col-md-4 control-label" for="password"></label>
   <div class="col-md-4">
     <input id="password" name="password" type="password" placeholder="Mot de passe" class="form-control input-md" required="">
+    <span class="erreur">${form.erreurs['password']}</span>
     <span class="help-block">Entrez votre mot de passe</span>
   </div>
 </div>
@@ -38,7 +40,13 @@
     <button id="connexion" name="connexion" class="btn btn-success">Connexion</button>
   </div>
 </div>
-
+ <p class="${empty form.erreurs ? 'succes' : 'erreur'}">${form.resultat}</p>
+                
+                <%-- Vérification de la présence d'un objet utilisateur en session --%>
+                <c:if test="${!empty sessionScope.sessionUtilisateur}">
+                    <%-- Si l'utilisateur existe en session, alors on affiche son adresse email. --%>
+                	<p class="succes">Vous êtes connecté(e) avec l'adresse : ${sessionScope.sessionUtilisateur.nomUtilisateur}</p>
+                </c:if>
 </fieldset>
 </form>
 <c:import url="footer.jsp" />

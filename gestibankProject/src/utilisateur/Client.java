@@ -9,6 +9,8 @@ private ArrayList<Compte> comptes;
 private Conseiller conseiller;
 private ArrayList<Demandes> listeDemande;
 
+public Client(){}
+
 public Client(ArrayList<Compte> comptes, Conseiller conseiller) {
 	super();
 	this.comptes = comptes;
