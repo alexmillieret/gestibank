@@ -5117,6 +5117,12 @@ tbody.collapse.show {
 	background-color: silver;
 	padding: 0.5rem 0.5rem;
 	}
+	.enteteEspaceClient{
+	font-size:2em;
+	}
+	.myButton{
+	font-size:10px;
+	}
 }
 @media (min-width: 576px) {
   .jumbotron {

@@ -5,7 +5,9 @@
 			<img src="images/drapeau-france-icone-7111-32.png" alt="france" /> <img
 				src="images/drapeau-ile-jarvis-icone-9474-32.png" alt="etats-unis" />
 			<img src="images/espagne-icone-5317-32.png" alt="espagne" />
+			<form method="get" action="Deconnexion">
 			<button id="deconnexion" name="deconnexion" class="btn btn-danger">Deconnexion</button>
+			</form>
 		</div>
 		<img id="logo5" src="images/logo5.png" alt="logo5" style="width: 597px;" />
 		<img id="logo2" src="images/logo2.png" alt="logo2" style="width: 200px;" />
