@@ -56,14 +56,20 @@ public class Controller extends HttpServlet {
 			rd = ctx.getRequestDispatcher("/connexion.jsp");
 			rd.forward(request, response);
 			break;
+			
 		case "formulaire":
 			rd = ctx.getRequestDispatcher("/formulaire.jsp");
 			rd.forward(request, response);
 			break;		
+			
 		case "formulaireok":
 			rd = ctx.getRequestDispatcher("/CtlFormulaire");
+			rd.include(request, response);
+			
+			rd = ctx.getRequestDispatcher("/accueilClient.jsp");
 			rd.forward(request, response);
 			break;		
+			
 		default :
 			rd = ctx.getRequestDispatcher("/accueil.jsp");
 			rd.forward(request, response);
