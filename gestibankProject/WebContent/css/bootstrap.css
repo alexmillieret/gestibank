@@ -81,7 +81,7 @@ body {
   color: #919aa1;
   text-align: left;
   background-color: #fff;
-  background-image: url("../images/banque.png");
+  background-image: url("../images/banques.png");
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment:fixed;
@@ -9198,4 +9198,14 @@ th {
 .fcrea {
 	font-size: 1.6em;
 	color: black;
+}
+
+
+.jserror{
+	
+	color: red;
+	font-size: 1.6em;
+	text-align: center;
+	margin-bottom: 3px;
+	
 }
