@@ -1,10 +1,12 @@
 package forms;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import compte.Compte;
 import utilisateur.Client;
 public class ConnexionForm {
 	private static final String CHAMP_NOM = "login";
@@ -42,8 +44,13 @@ public class ConnexionForm {
 			setErreur(CHAMP_PASS, e.getMessage());
 		}
 		client.setPassword(password);
-
-		/* Initialisation du résultat global de la validation. */
+		Compte compte=new Compte();
+		compte.setNumeroCompte("1234");
+		compte.setSolde(1000);
+		ArrayList<Compte> comptes=new ArrayList<Compte>();
+		comptes.add(compte);
+		client.setComptes(comptes);
+				/* Initialisation du résultat global de la validation. */
 		if (erreurs.isEmpty()) {
 			resultat = "Succès de la connexion.";
 		} else {

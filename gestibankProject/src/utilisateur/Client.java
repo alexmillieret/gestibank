@@ -18,6 +18,30 @@ public Client(ArrayList<Compte> comptes, Conseiller conseiller) {
 }
 
 
+public ArrayList<Compte> getComptes() {
+	return comptes;
+}
+
+public void setComptes(ArrayList<Compte> comptes) {
+	this.comptes = comptes;
+}
+
+public Conseiller getConseiller() {
+	return conseiller;
+}
+
+public void setConseiller(Conseiller conseiller) {
+	this.conseiller = conseiller;
+}
+
+public ArrayList<Demandes> getListeDemande() {
+	return listeDemande;
+}
+
+public void setListeDemande(ArrayList<Demandes> listeDemande) {
+	this.listeDemande = listeDemande;
+}
+
 @Override
 public String getNomUtilisateur() {
 	// TODO Auto-generated method stub
@@ -117,32 +141,6 @@ public void setNbEnfts(String nbEnfts) {
 }
 
 
-@Override
-protected Object clone() throws CloneNotSupportedException {
-	// TODO Auto-generated method stub
-	return super.clone();
-}
-
-
-@Override
-public boolean equals(Object arg0) {
-	// TODO Auto-generated method stub
-	return super.equals(arg0);
-}
-
-
-@Override
-protected void finalize() throws Throwable {
-	// TODO Auto-generated method stub
-	super.finalize();
-}
-
-
-@Override
-public int hashCode() {
-	// TODO Auto-generated method stub
-	return super.hashCode();
-}
 
 
 @Override

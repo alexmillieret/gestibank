@@ -8,10 +8,7 @@ import mouvement.Mouvement;
 public class Decouvert extends Compte {
 private double decouvert;
 
-public Decouvert(String numeroCompte, String rib, double solde, Date dateCreation, ArrayList<Mouvement> listeMouvements,
-		double decouvert) {
-	super(numeroCompte, rib, solde, dateCreation, listeMouvements);
-	this.decouvert = decouvert;
+public Decouvert() {
 }
 
 public double getDecouvert() {

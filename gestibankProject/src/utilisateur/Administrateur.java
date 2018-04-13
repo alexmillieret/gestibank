@@ -6,9 +6,8 @@ public class Administrateur extends Utilisateur {
 private ArrayList<Conseiller> listeConseiller;
 
 
-	public Administrateur(ArrayList<Conseiller> listeConseiller) {
-	super();
-	this.listeConseiller = listeConseiller;
+	public Administrateur() {
+
 	
 }
 	public ArrayList<Conseiller> getListeConseiller() {

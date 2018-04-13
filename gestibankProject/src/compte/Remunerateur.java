@@ -8,11 +8,7 @@ import mouvement.Mouvement;
 public class Remunerateur extends Compte {
 private double tauxRenum;
 
-public Remunerateur(String numeroCompte, String rib, double solde, Date dateCreation,
-		ArrayList<Mouvement> listeMouvements, double tauxRenum) {
-	super(numeroCompte, rib, solde, dateCreation, listeMouvements);
-	this.tauxRenum = tauxRenum;
-}
+public Remunerateur() {}
 
 public double getTauxRenum() {
 	return tauxRenum;

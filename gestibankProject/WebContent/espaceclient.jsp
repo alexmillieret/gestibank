@@ -13,6 +13,12 @@
 <img id="logo4" src="images/logo2.png" alt="logo4" />
 Bienvenue dans l'espace client
 </div>
+Liste de vos comptes :
+</br>
+<c:forEach items="${client.getComptes()}" var="compte">
+<c:out value="${compte.toString()}"></c:out>
+></c:forEach>
+
 <div class="bodyclient">
 <input class="myButton" type="submit" value="Demande de modification / Ajout de comptes">
 </div>

@@ -5,7 +5,7 @@ import java.util.Date;
 
 import mouvement.Mouvement;
 
-public abstract class Compte {
+public  class Compte {
 private String numeroCompte;
 private String rib;
 private double solde;
@@ -13,13 +13,9 @@ private Date dateCreation;
 private ArrayList<Mouvement> listeMouvements;
 
 
-public Compte(String numeroCompte, String rib, double solde, Date dateCreation, ArrayList<Mouvement> listeMouvements) {
-	super();
-	this.numeroCompte = numeroCompte;
-	this.rib = rib;
-	this.solde = solde;
-	this.dateCreation = dateCreation;
-	this.listeMouvements = listeMouvements;
+
+public Compte() {
+	// TODO Auto-generated constructor stub
 }
 
 
@@ -30,6 +26,13 @@ public String getNumeroCompte() {
 
 public void setNumeroCompte(String numeroCompte) {
 	this.numeroCompte = numeroCompte;
+}
+
+
+@Override
+public String toString() {
+	return "Compte [numeroCompte=" + numeroCompte + ", rib=" + rib + ", solde=" + solde + ", dateCreation="
+			+ dateCreation + ", listeMouvements=" + listeMouvements + "]";
 }
 
 
