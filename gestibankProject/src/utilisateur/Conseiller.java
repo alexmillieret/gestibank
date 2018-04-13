@@ -12,7 +12,7 @@ private int matricule;
 		super();
 		this.listeClient = listeClient;
 		this.dateDebutContrat = dateDebutContrat;
-		this.setRole("Manager");
+		
 		
 	}
 
@@ -109,18 +109,6 @@ private int matricule;
 	}
 
 
-	@Override
-	public Adresse getAdresse() {
-		// TODO Auto-generated method stub
-		return super.getAdresse();
-	}
-
-
-	@Override
-	public void setAdresse(Adresse adresse) {
-		// TODO Auto-generated method stub
-		super.setAdresse(adresse);
-	}
 
 
 	@Override
@@ -138,7 +126,7 @@ private int matricule;
 
 
 	@Override
-	public int getNbEnfts() {
+	public String getNbEnfts() {
 		// TODO Auto-generated method stub
 		return super.getNbEnfts();
 	}

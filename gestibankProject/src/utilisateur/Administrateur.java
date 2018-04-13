@@ -9,7 +9,7 @@ private ArrayList<Conseiller> listeConseiller;
 	public Administrateur(ArrayList<Conseiller> listeConseiller) {
 	super();
 	this.listeConseiller = listeConseiller;
-	this.setRole("SuperAdmin");
+	
 }
 	public ArrayList<Conseiller> getListeConseiller() {
 		return listeConseiller;
@@ -67,16 +67,8 @@ private ArrayList<Conseiller> listeConseiller;
 		// TODO Auto-generated method stub
 		super.setMail(mail);
 	}
-	@Override
-	public Adresse getAdresse() {
-		// TODO Auto-generated method stub
-		return super.getAdresse();
-	}
-	@Override
-	public void setAdresse(Adresse adresse) {
-		// TODO Auto-generated method stub
-		super.setAdresse(adresse);
-	}
+
+
 	@Override
 	public String getTelephone() {
 		// TODO Auto-generated method stub
@@ -88,7 +80,7 @@ private ArrayList<Conseiller> listeConseiller;
 		super.setTelephone(telephone);
 	}
 	@Override
-	public int getNbEnfts() {
+	public String getNbEnfts() {
 		// TODO Auto-generated method stub
 		return super.getNbEnfts();
 	}
@@ -97,12 +89,7 @@ private ArrayList<Conseiller> listeConseiller;
 		// TODO Auto-generated method stub
 		super.setNbEnfts(nbEnfts);
 	}
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
-		return super.clone();
-	}
-	@Override
+
 	public boolean equals(Object arg0) {
 		// TODO Auto-generated method stub
 		return super.equals(arg0);

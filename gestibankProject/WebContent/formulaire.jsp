@@ -13,8 +13,8 @@
 <body>
 <fmt:setBundle basename="international/message"/>
 
-	<div>
-		<form class="form-horizontal" method="post" id="formcrea" action="Controller?page=formulaireok">
+
+		<form class="form-horizontal" method="post" id="formcrea" action="CreationClient">
 			<fieldset>
 
 				<legend><fmt:message key="f.ouvcompte"></fmt:message></legend>
@@ -145,8 +145,7 @@
 			</fieldset>
 
 		</form>
-	</div>
-
+ <p class="info">${ form.resultat }</p>
 	<c:import url="footer.jsp" />
 </body>
 

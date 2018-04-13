@@ -7,18 +7,49 @@ public abstract class Utilisateur {
 	private String nom;
 	private String prenom;
 	private String mail;
-	private Adresse adresse;
+	private String numRue;
+	private String rue;
+	private String ville;
+	private String codePostal;
 	private String telephone;
-	private String role;
-	private int nbEnfts;
-
-	public String getRole() {
-		return role;
+	private String nbEnfts;
+	private String situation;
+	private String pays;
+	
+	
+	public String getNumRue() {
+		return numRue;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setNumRue(String numRue) {
+		this.numRue = numRue;
 	}
+
+	public String getRue() {
+		return rue;
+	}
+
+	public void setRue(String rue) {
+		this.rue = rue;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
+	public String getCodePostal() {
+		return codePostal;
+	}
+
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
+	}
+
+
 
 	public String getNomUtilisateur() {
 		return nomUtilisateur;
@@ -60,13 +91,6 @@ public abstract class Utilisateur {
 		this.mail = mail;
 	}
 
-	public Adresse getAdresse() {
-		return adresse;
-	}
-
-	public void setAdresse(Adresse adresse) {
-		this.adresse = adresse;
-	}
 
 	public String getTelephone() {
 		return telephone;
@@ -76,12 +100,33 @@ public abstract class Utilisateur {
 		this.telephone = telephone;
 	}
 
-	public int getNbEnfts() {
+	public String getNbEnfts() {
 		return nbEnfts;
 	}
 
-	public void setNbEnfts(int nbEnfts) {
+	public void setNbEnfts(String nbEnfts) {
 		this.nbEnfts = nbEnfts;
+	}
+
+	public String getSituation() {
+		return situation;
+	}
+
+	public void setSituation(String situation) {
+		this.situation = situation;
+	}
+
+	public String getPays() {
+		return pays;
+	}
+
+	public void setPays(String pays) {
+		this.pays = pays;
+	}
+
+	public void setNbEnfts(int nbEnfts) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
