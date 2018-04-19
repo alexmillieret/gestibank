@@ -49,14 +49,6 @@ public class Controller extends HttpServlet {
 		ServletContext ctx = this.getServletContext();
 		RequestDispatcher rd = null;
 		String page = request.getParameter("page");
-		Client client1 = new Client();
-		client1.setNomUtilisateur("client");
-		client1.setPassword("toto");
-		Administrateur admin = new Administrateur();
-		admin.setNomUtilisateur("admin");
-		admin.setPassword("admin");
-		System.out.println("Client : nom utilisateur : " + client1.getNomUtilisateur() + " password : " + client1.getPassword());
-		System.out.println("Administrateur : nom utilisateur : " + admin.getNomUtilisateur() + " password : " + admin.getPassword());
 
 		if (page == null){
 			page = "rien";
