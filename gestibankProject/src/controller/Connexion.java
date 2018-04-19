@@ -16,9 +16,9 @@ import utilisateur.Client;
 @WebServlet("/Connexion")
 public class Connexion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public static final String ATT_CLIENT         = "client";
-    public static final String ATT_FORM         = "form";
-    public static final String ATT_SESSION_USER = "sessionUtilisateur";
+	public static final String REQUESTCLIENT         = "client";
+    public static final String FORM_CONNEXION         = "form";
+    public static final String UTILISATEUR_SESSION = "sessionUtilisateur";
     public static final String VUE              = "/espaceclient.jsp";
     /**
      * @see HttpServlet#HttpServlet()
@@ -57,15 +57,14 @@ public class Connexion extends HttpServlet {
          * Client à la session, sinon suppression du bean de la session.
          */
         if ( form.getErreurs().isEmpty() ) {
-            session.setAttribute( ATT_SESSION_USER, client );
+            session.setAttribute( UTILISATEUR_SESSION, client );
         } else {
-            session.setAttribute( ATT_SESSION_USER, null );
+            session.setAttribute( UTILISATEUR_SESSION, null );
         }
 
         /* Stockage du formulaire et du bean dans l'objet request */
-        request.setAttribute( ATT_FORM, form );
-        request.setAttribute( ATT_CLIENT, client );
-
+        request.setAttribute( FORM_CONNEXION, form );
+        request.setAttribute( REQUESTCLIENT, client );
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 	}

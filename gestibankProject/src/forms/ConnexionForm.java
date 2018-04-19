@@ -47,8 +47,12 @@ public class ConnexionForm {
 		Compte compte=new Compte();
 		compte.setNumeroCompte("1234");
 		compte.setSolde(1000);
+		Compte compte2=new Compte();
+		compte2.setNumeroCompte("6985");
+		compte2.setSolde(500);
 		ArrayList<Compte> comptes=new ArrayList<Compte>();
 		comptes.add(compte);
+		comptes.add(compte2);
 		client.setComptes(comptes);
 				/* Initialisation du résultat global de la validation. */
 		if (erreurs.isEmpty()) {

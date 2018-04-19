@@ -6,26 +6,24 @@
 <head>
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Espace Client</title>
+<title>Comptes</title>
 </head>
 <body>
 <div class="enteteEspaceClient">
 <img id="logo4" src="images/logo2.png" alt="logo4" />
-Bienvenue dans l'espace client
+Gestion de vos comptes
 </div>
-<div class="bodyclient">
-<form name="verscompte" action="Controller?page=compte" method= "post">
-<input class="myButton" type="submit" value="Demande de modification / Ajout de comptes">
+		<div>
+		<form method="post" action="">
+   <p>
+       <label for="compte">Liste de vos comptes :</label><br />
+       <select name="compte" id="compte" size="x">
+<c:forEach items="${sessionScope.sessionUtilisateur.getComptes()}" var="compte">
+           <option value=""><c:out value="${compte.toString()}"></c:out></option>
+           </c:forEach>
+       </select>
+   </p>
 </form>
-</div>
-<div class="bodyclient">
-<input class="myButton" type="submit" value="Effectuer une transation">
-</div>
-<div class="bodyclient">
-<input class="myButton" type="submit" value="Voir mes notifications">
-</div>
-<div class="bodyclient">
-<input class="myButton" type="submit" value="Visualiser mes comptes">
 </div>
 <c:import url="footer.jsp" />
 </body>

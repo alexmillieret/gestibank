@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import utilisateur.Administrateur;
 import utilisateur.Client;
@@ -19,7 +20,7 @@ import utilisateur.Client;
 @WebServlet("/Controller")
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    public static final String UTILISATEUR_SESSION = "sessionUtilisateur";;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -63,6 +64,12 @@ public class Controller extends HttpServlet {
 			rd = ctx.getRequestDispatcher("/formulaire.jsp");
 			rd.forward(request, response);
 			break;		
+		case "compte":
+			HttpSession session = request.getSession(false);
+			request.setAttribute("client",((Client)session.getAttribute(UTILISATEUR_SESSION)));
+			rd = ctx.getRequestDispatcher("/compte.jsp");
+			rd.forward(request, response);
+			break;	
 			
 		case "formulaireok":
 			rd = ctx.getRequestDispatcher("/CtlFormulaire");

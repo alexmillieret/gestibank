@@ -31,8 +31,8 @@ public void setNumeroCompte(String numeroCompte) {
 
 @Override
 public String toString() {
-	return "Compte [numeroCompte=" + numeroCompte + ", rib=" + rib + ", solde=" + solde + ", dateCreation="
-			+ dateCreation + ", listeMouvements=" + listeMouvements + "]";
+	return "Numéro de compte : " + numeroCompte + " RIB : " + rib + " Solde : " + solde + " Date de création : "
+			+ dateCreation;
 }
 
 
